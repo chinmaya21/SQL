@@ -1,0 +1,9 @@
+2356_Number_of_Unique_Subjects_Taught_by_Each_Teacher.sql
+
+# Write your MySQL query statement below
+select 
+teacher_id,
+count(distinct subject_id) as cnt 
+from 
+Teacher 
+group by 1
